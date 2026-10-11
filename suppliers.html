@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verified Manufacturers &amp; Wholesale Suppliers Directory — ProductsX (Open Source)</title>
+    <meta name="description" content="Browse verified manufacturers and wholesale suppliers from around the world. Company profiles, product counts, certifications and locations — open-source directory powered by the public ProductsX API.">
+    <meta name="keywords" content="manufacturers directory, wholesale suppliers, verified suppliers, factory directory, B2B suppliers, sourcing, ProductsX">
+    <link rel="canonical" href="https://productsx.app/explore">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ProductsX">
+    <meta property="og:title" content="Verified Manufacturers &amp; Wholesale Suppliers Directory — ProductsX">
+    <meta property="og:description" content="Browse verified manufacturers and wholesale suppliers worldwide. Open-source directory powered by the public ProductsX API.">
+    <meta property="og:url" content="https://productsx.app/explore">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Suppliers Directory",
+      "url": "https://productsx.app/explore",
+      "isPartOf": { "@type": "WebSite", "name": "ProductsX", "url": "https://productsx.app/" }
+    }
+    </script>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23000000'/%3E%3Cpath d='M8 24L24 8M8 8l6 6M18 18l6 6' stroke='%23fff' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/productsx.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="https://productsx.app/" target="_blank" rel="noopener">
+                <svg class="brand-logo" viewBox="0 0 32 32" aria-hidden="true">
+                    <rect width="32" height="32" rx="8" fill="var(--logo-bg)"></rect>
+                    <path d="M8 24L24 8M8 8l6 6M18 18l6 6" stroke="#fff" stroke-width="2.5" stroke-linecap="round"></path>
+                </svg>
+                <span class="brand-name">ProductsX<em>.app</em></span>
+            </a>
+            <form class="search-box" action="https://productsx.app/search" method="get" target="_blank" role="search">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="search" name="q" placeholder="Search products, suppliers..." aria-label="Search products and suppliers on ProductsX">
+            </form>
+            <nav class="header-nav" aria-label="Primary">
+                <a href="index.html" class="nav-link">Products</a>
+                <a href="suppliers.html" class="nav-link active">Suppliers</a>
+                <a href="https://productsx.app/explore" class="nav-link" target="_blank" rel="noopener">Explore</a>
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="site-hero">
+        <h1 class="hero-title">Verified Manufacturers &amp; Suppliers</h1>
+        <p class="hero-sub">Company profiles, locations and product catalogs — connect directly with factories worldwide.</p>
+    </section>
+
+    <main class="main-area">
+        <div class="supplier-grid" id="suppliers">
+            <!-- supplier cards injected by js/productsx.js -->
+        </div>
+        <div class="feed-status" id="supplierStatus" role="status" aria-live="polite">Loading suppliers…</div>
+        <noscript>
+            <p class="noscript-tip">JavaScript is disabled. Browse all suppliers directly on
+                <a href="https://productsx.app/explore" rel="noopener">ProductsX.app Explore</a>.</p>
+        </noscript>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            <a href="https://productsx.app/" target="_blank" rel="noopener">ProductsX.app</a> ·
+            <a href="https://productsx.app/about" target="_blank" rel="noopener">About</a> ·
+            <a href="https://productsx.app/privacy" target="_blank" rel="noopener">Privacy</a> ·
+            <a href="https://productsx.app/terms" target="_blank" rel="noopener">Terms</a>
+        </p>
+        <p class="footer-note">Open-source frontend · Data via the public
+            <a href="https://productsx.app/api/companies" target="_blank" rel="noopener">ProductsX API</a> · MIT License</p>
+    </footer>
+
+    <script src="js/productsx.js"></script>
+</body>
+</html>
